@@ -63,6 +63,10 @@ h1 {
     color: white;
 }
 
+.intro-top {
+    display: block;
+}
+
 
 .eno{
     font-size: 2.5rem;
