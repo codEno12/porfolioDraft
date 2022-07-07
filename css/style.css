@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=DotGothic16&family=Hind+Siliguri:wght@300;600&family=M+PLUS+1+Code:wght@400;500&family=Mukta:wght@300;600&family=Quantico:ital@0;1&family=Rampart+One&family=Righteous&family=Russo+One&family=Train+One&family=Varela+Round&family=Yuji+Boku&display=swap');
+
+
+/*
+font-family: 'Hind Siliguri',
+sans-serif;
+
+font-family: 'Mukta',
+sans-serif;
+
+font-family: 'Neonderthaw',
+cursive;
+
+
+
+
+Eno JP 
+
+1 font-family: 'DotGothic16',
+sans-serif;
+
+2 font-family: 'Rampart One',
+cursive;
+
+3 font-family: 'Train One',
+cursive;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    /*Basic Fonts */
+    --font-main-M: 'M PLUS 1 Code', sans-serif;
+    --font-main-RO: 'Russo One', sans-serif;
+
+    /* Button Font */
+    --font-button-Quan:'Quantico', sans-serif;
+
+
+    /* Tag Fonts */
+    --font-tag--1-Caveat: 'Caveat', sans-serif;
+
+    /*JP Name */
+    --font-eno--2--Rampart: 'Rampart One', sans-serif;
+    --font-eno--3-Train: 'Train One', sans-serif;
+}   
+
+
+body{
+    font: 16px;
+}
+
+
+
+/* 
+Typo Graphy 
+*/ 
+
+h1 {
+    font-family: var(--font-main-RO);
+    color: white;
+}
+
+
+.eno{
+    font-size: 2.5rem;
+}
+
+p{
+    font-family: var(--font-main-M);
+    color: white
+}
+
+.name {
+    font-family: var(--font-eno--3-Train);
+    -webkit-animation: glow-eno 1s ease-in-out infinite alternate;
+    -moz-animation: glow-eno 1s ease-in-out infinite alternate;
+    animation: glow-eno 1s ease-in-out infinite alternate;
+    
+}
+
+.title{
+    font-family: var(--font-main-M);
+}
+
+
+
+.about-me {
+    font-family: var(--font-eno--2--Rampart)
+}
+
+.projects-heading{
+    font-size: 3.5rem;
+    display: inline;
+    color: rgba(141, 181, 255, 0.8);
+    -webkit-animation: glow-projects 1s ease-in-out infinite alternate;
+    -moz-animation: glow-projects 1s ease-in-out infinite alternate;
+    animation: glow-projects 1s ease-in-out infinite alternate;
+}
+
+.projects-heading-3D{
+    display: inline;
+    font-family: var(--font-main-RO);
+    font-size: 3.5rem;
+    color: rgba(255, 53, 53, 0.8);
+    margin-left: -15.5rem;
+
+}
+
+
+.contact-title, .contact-title-3D {
+    font-size: 3rem;
+    display: inline; 
+    font-family: var(--font-main-RO);
+}
+
+.contact-title {
+    color: #fff200;;
+    -webkit-animation: glow-contact 1s ease-in-out infinite alternate;
+    -moz-animation: glow-contact 1s ease-in-out infinite alternate;
+    animation: glow-contact 1s ease-in-out infinite alternate;
+}
+
+.contact-title-3D {
+    margin: -17.5rem;
+    display: inline;
+    color: rgb(123, 165, 255);
+}
+
+
+/* gradient font */ 
+.name-jp {
+    writing-mode: vertical-lr;
+    font-family: var(--font-eno--3-Train);
+    font-size: 13.5rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: glow 1.5s ease-in-out infinite alternate;
+    -moz-animation: glow 1.5s ease-in-out infinite alternate;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Glow */
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 8px #fff, 0 0 8px #4bffc9, 0 0 20px #4bffc9, 0 0 30px #4bffc9, 0 0 40px #4bffc9, 0 0 50px #4bffc9;
+    }
+}
+
+
+/* Glow - Name - Eno */
+@-webkit-keyframes glow-eno {
+    from {
+        text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 30px #f4fffc, 0 0 40px #f4fffc, 0 0 50px #f4fffc, 0 0 60px #f4fffc, 0 0 70px #f4fffc;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 5px #f4fffc, 0 0 20px #f4fffc, 0 0 30px #f4fffc, 0 0 40px #f4fffc, 0 0 50px #f4fffc;
+    }
+}
+
+/* Glow - Tags - e o */
+@-webkit-keyframes glow-tag-eo {
+    from {
+        text-shadow: 0 0 1px #4bffc9, 0 0 3px #4bffc9;
+    }
+
+    to {
+        text-shadow: 0 0 2px #4bffc9, 0 0 3px #4bffc9;
+    }
+}
+
+/* Glow - Tgs - #fff */
+@-webkit-keyframes glow-tags-oe {
+    from {
+        text-shadow: 0 0 1px #e60073, 0 0 3px #e60073; 
+    }
+
+    to {
+        text-shadow: 0 0 2px #e60073, 0 0 3px #e60073;
+    }
+}
+
+/* Glow - button - contact */
+@-webkit-keyframes glow-button {
+    from {
+        text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff200, 0 0 8px #fff200, 0 0 12px #fff200, 0 0 16px #fff200, 0 0 20px #fff200;
+    }
+
+    to {
+        text-shadow: 0 0 px #fff, 0 0 5px #fff200, 0 0 10px #fff200, 0 0 15px #fff200, 0 0 20px #fff200, 0 0 25px #fff200;
+    }
+}
+
+
+/* Glow - Projects */
+@-webkit-keyframes glow-projects {
+    from {
+        text-shadow: 0 0 5px rgba(255, 53, 53, 0.8), 0 0 5px rgba(255, 53, 53, 0.8), 0 0 10px rgba(255, 53, 53, 0.8), 0 0 20px rgba(255, 53, 53, 0.8), 0 0 30px rgba(255, 53, 53, 0.8), 0 0 40px rgba(255, 53, 53, 0.8), 0 0 50px rgba(255, 53, 53, 0.8);
+    }
+
+    to {
+        text-shadow: 0 0 8px rgba(141, 181, 255, 0.8), 0 0 8px rgba(141, 181, 255, 0.8), 0 0 10px rgba(141, 181, 255, 0.8), 0 0 15px rgba(141, 181, 255, 0.8), 0 0 25px rgba(141, 181, 255, 0.8), 0 0 35px rgba(141, 181, 255, 0.8);
+    }
+}
+
+
+/* Glow Contact */ 
+@-webkit-keyframes glow-contact {
+    from {
+            text-shadow: 0 0 5px #fff200, 0 0 5px #fff200, 0 0 6px #fff200, 0 0 8px #fff200, 0 0 10px rgba(255, 53, 53, 0.8), 0 0 12px #fff200, 0 0 14px #fff200;
+        }
+    
+        to {
+            text-shadow: 0 0 8px rgba(141, 181, 255, 0.8), 0 0 8px rgba(141, 181, 255, 0.8), 0 0 10px rgba(141, 181, 255, 0.8), 0 0 12px rgba(141, 181, 255, 0.8), 0 0 14px rgba(141, 181, 255, 0.8), 0 0 16px rgba(141, 181, 255, 0.8);
+        }
+}
+
+/* 
+Basic Style
+*/
+
+body{
+    background: #1d1d1d;
+}
+
+.main-container {
+    width: 96%;
+    margin: auto;
+}
+
+.career-title {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.intro-top{
+    padding: 2.5rem 0;
+
+}
+
+.description { 
+    padding: 0 1rem;
+}
+.button-container {
+    margin: 2rem 0;
+}
+.contact-btn{
+    margin: 0 1rem;
+}
+
+        /* Projects */
+
+.projects-container {
+    padding: 1rem 1rem;
+    margin-top: 3.5rem;
+}
+
+.projects {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.proj-img {
+    width: 90%; 
+    align-self: center;
+    padding-top: 1rem;
+}
+
+.projects p {
+    text-align: center;
+}
+
+
+.contact-me {
+    margin: 1.5rem;
+}
+
+
+/* Skills */
+        /* Top icon */
+.top-icon {
+    display: flex;
+    justify-content: center;
+}
+
+        /* Bottom icon */ 
+
+.bottom-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-icon img {
+    border-radius: 80px;
+}
+
+
+/* Contact Section */
+
+
+
+
+
+
+
+
+
+    /*Form */
+.center-form{
+    display: flex;
+    justify-content: center;
+}
+.form-container {
+    display: flex;
+    width: 270px;
+    height: 500px;
+    justify-content: center;
+}
+
+input, textarea {
+    color: #8d8d8d;
+    background: #2b2b2b;
+    width: 100%;
+    margin: 0.5rem;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.message-input textarea{
+    height: 150px;
+}
+
+.submit-button { 
+    width: 60%;
+}
+
+/* Specific Styling */
+    /* Header */
+        /* Button */ 
+
+.contact-btn {
+    display: inline-block;
+    margin: 1rem;
+    text-decoration: none;
+    color: rgb(123, 165, 255);
+    font-size: 1.5rem;
+    font-family: var(--font-button-Quan);
+    border-radius: 10px;
+    border: none;
+    padding: 0.7rem;
+    box-shadow: 1px 1px 20px #ffffff;
+    -webkit-animation: glow-button 1s ease-in-out infinite alternate;
+    -moz-animation: glow-button 1s ease-in-out infinite alternate;
+    animation: glow-button 1s ease-in-out infinite alternate; 
+}
+
+
+
+/* Center JP Name */
+
+.intro-top {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.i {
+    border: solid red;
+    position: relative;
+    font-size: 8rem;
+}
+
+/* Tags */ 
+
+body:before {
+    content: '<body>';
+    color: gray;
+    font-family: var(--font-tag--1-Caveat);
+
+}
+
+.intro-top:before{
+    content: 'え';
+    color:white;
+    font-size: 1.3rem;
+    font-family: var(--font-eno--3-Train);
+    -webkit-animation: glow-tag-eo 1s ease-in-out infinite alternate;
+    -moz-animation: glow-tag-eo 1s ease-in-out infinite alternate;
+    animation: glow-tag-eo 1s ease-in-out infinite alternate;
+}
+
+.main-title:before {
+    content: 'の';
+    font-size: 1.3rem;
+    font-family: var(--font-eno--3-Train);
+    -webkit-animation: glow-tag-eo 1s ease-in-out infinite alternate;
+    -moz-animation: glow-tag-eo 1s ease-in-out infinite alternate;
+    animation: glow-tag-eo 1s ease-in-out infinite alternate;
+}
+
+.intro-top::after {
+    content: 'の';
+    color: white;
+    font-size: 1.3rem;
+    font-family: var(--font-eno--3-Train);
+    -webkit-animation: glow-tags-oe 1s ease-in-out infinite alternate;
+    -moz-animation: glow-tags-oe 1s ease-in-out infinite alternate;
+    animation: glow-tags-oe 1s ease-in-out infinite alternate;
+}
+
+
+.main-title::after {
+    content: 'え';
+    color: white;
+    font-size: 1.3rem;
+    font-family: var(--font-eno--3-Train);
+    -webkit-animation: glow-tags-oe 1s ease-in-out infinite alternate;
+    -moz-animation: glow-tags-oe 1s ease-in-out infinite alternate;
+    animation: glow-tags-oe 1s ease-in-out infinite alternate;
+}
+
+.eno:before {
+    content: '<h1>';
+    font-family: var(--font-tag--1-Caveat);
+    writing-mode: horizontal-tb;
+    font-size: 1rem;
+    color: gray;
+
+}
+
+.eno:after {
+    content: '</h1>';
+    font-family:var(--font-tag--1-Caveat);
+    writing-mode: horizontal-tb;
+    font-size: 1rem;
+    color: gray
+}
+
+.career-title:before {
+    content: '<p>';
+    font-family: var(--font-tag--1-Caveat);
+    font-size: 1rem;
+    color: gray;
+
+}
+
+.career-title:after {
+    content: '<p>';
+    font-family: var(--font-tag--1-Caveat);
+    font-size: 1rem;
+    color: gray;
+
+}
+        /* Tags Projects */
+
+.projects-container:before {
+    content: '<h2>';
+    font-family: var(--font-tag--1-Caveat);
+    font-size: 1rem;
+    color: gray;
+}
+
+.work-container:before{ 
+    content: '</h2>';
+    font-family: var(--font-tag--1-Caveat);
+    font-size: 1rem;
+    color: gray;
+
+}
+
+/* */ 
+
+.title {
+    padding-left: 1rem;
+    margin-top: -0.2rem;
+    margin-bottom: -0.2rem;
+    font-size: 1.2rem;
+}
+
+
+/* Form Tags */ 
+
+
+/* Neon Button */
+/* 
+.neon-button { 
+    font-family: var(--font-button-Press);
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 1rem;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.neon-button:hover{
+    color: #255784; 
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+.neon-button span {
+    position: absolute;
+    display: block;
+}
+
+
+.neon-button span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+.neon-button:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+
+.neon-button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.neon-button:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+
+
+.neon-button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.neon-button:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+
+
+
+.neon-button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+.neon-button:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+} */
