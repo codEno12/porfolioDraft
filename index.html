@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eno's Portfolio</title>
+    <script src="https://kit.fontawesome.com/a2a3f69436.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/normalize.css">
     <!-- <link rel="stylesheet" href="./css/reset.css"> -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=DotGothic16&family=Hind+Siliguri:wght@300;600&family=M+PLUS+1+Code:wght@400;500&family=Mukta:wght@300;600&family=Quantico:ital@0;1&family=Rampart+One&family=Righteous&family=Russo+One&family=Train+One&family=Varela+Round&family=Yuji+Boku&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="main-container">
@@ -24,7 +29,7 @@
                         <br>
                         <span class="I">I</span>'m <span class="name">Eno</span>
                         <br>
-                        web weveloper
+                        web developer
                     </h1>
                 <div class="career-title">
                     <p class="title">
@@ -109,57 +114,62 @@
             <section class="skills flex">
                 
                 <div class="top-icon" >
-                    <img class="html logo" src="./img/html-5.png" alt="html logo">
+                <i class="fa-brands fa-html5 fa-5x">HTML</i>
                     <img class="css logo" src="./img/css-3.png" alt="css logo">
                 </div>
                 <div class="bottom-icon">
                     <img class="javascript-logo" src="./img/js.png" alt="javascript logo">
                 </div>
-
             </section>
-        </main>
 
 
-        <footer>
             <section id="contact-link" class="contact-me">
                 <div class="contact-heading-container">
                     <h2 class="contact-title">Contact Me</h2><span class="contact-title-3D">Contact Me</span>
                 </div>
                 <p>
-                    Do you need a new 
+                    Do you need a new
                 </p>
             </section>
             <div class="center-form">
                 <section class="form-container">
-                        <form action="action_page.php">
-                
-                            <div class="name-container">
-                                <div class="fname-bar contact-form">
-                                    <label for="fname"></label>
-                                    <input type="text" id="fname" name="firstname" placeholder="Name">
-                                </div>
-                                <div class="lname-bar contact-form">
-                                    <label for="lname"></label>
-                                    <input type="text" id="email" name="email" placeholder="Email">
-                                </div>
-                                <div class="subject-bar contact-form">
-                                    <label for="subject"></label>
-                                    <input type="text" id="subject" name="subject" placeholder="Email">
-                                </div>
+                    <form action="action_page.php">
+            
+                        <div class="name-container">
+                            <div class="fname-bar contact-form">
+                                <label for="fname"></label>
+                                <input type="text" id="fname" name="firstname" placeholder="Name" required>
                             </div>
-                
-                
-                            <div class="message-input contact-form">
+                            <div class="lname-bar contact-form">
+                                <label for="lname"></label>
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="subject-bar contact-form">
                                 <label for="subject"></label>
-                                <textarea id="message" name="message" placeholder="Message"></textarea>
-                                <input class="submit-button" type="submit" value="Submit">
+                                <input type="text" id="subject" name="subject" placeholder="Subject">
                             </div>
-                
-                        </form>
-                    </div>
-                </section>
+                        </div>
+            
+            
+                        <div class="message-input contact-form">
+                            <label for="subject"></label>
+                            <textarea id="message" name="message" placeholder="Message" required></textarea>
+                            <input class="submit-button" type="submit" value="Submit">
+                        </div>
+                    </form>
+            </div>
+            </section>
             </div>
             <section>
+            </section>
+        </main>
+
+
+        <footer class="footer-flex">
+            <section class="icons-container">
+                <a class="icon icon-twitter" href="https://twitter.com/codEno_12" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i>
+                <a class="icon icon-github" href="https://github.com/codEno12" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+                <a class="icon icon-linkedin" href="https://www.linkedin.com/in/eno-jose-a154b522a/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
             </section>
         </footer>
     </main>
