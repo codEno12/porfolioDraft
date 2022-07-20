@@ -15,9 +15,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=DotGothic16&family=Hind+Siliguri:wght@300;600&family=M+PLUS+1+Code:wght@400;500&family=Mukta:wght@300;600&family=Quantico:ital@0;1&family=Rampart+One&family=Righteous&family=Russo+One&family=Train+One&family=Varela+Round&family=Yuji+Boku&display=swap" rel="stylesheet">
 </head>
 <body>
+        <header class="nav">
+            <section class="navbar-container">
+            <div class="menu-btn">
+                <div class="menu-btn-burger"></div>
+            </div>
+            </section>
+            <section class="navbar hidden">
+                <ul class="item1"></ul>
+                <ul class="item2"></ul>
+                <ul class="item3"></ul>
+            </section>
+        </header>
+
+
     <main class="main-container">
-        
-        <header class="intro flex">
+        <section class="intro flex">
             <div class="intro intro-right intro-top">
                 <h1 class="main-title"><span class="name-jp"><span class="e">英</span class="no">乃</span></h1>
         
@@ -49,17 +62,17 @@
                     Contact Me
                 </a> -->
             </div>
-        </header>
+        </section>
 
 
 <!--      -->
-        <main>
+        <section>
             <section class="projects-container flex">
 
           
              <div class="projects-heading-container">
 
-                        <h1 class="projects-heading">Projects</h1>
+                        <h2 class="projects-heading">Projects</h2>
                         <span class="projects-heading-3D">Projects</span>
                     </div>
 
@@ -82,14 +95,12 @@
             </section>
 
             <section class="details flex">
-                <div class="me">
-                    <h1 class="about-me">
-                        I, ich, 僕, ako
-                    </h1>
-                </div>
+                <h2 class="about-me">
+                        I ich 僕 ako
+                </h2>
                 <div class="description">
                     <p class="me me1">
-                        I am a polyglot full-stack software engineer with stems from cultures such as Japan, German, and the Philippines. With a passion for creativity, I use code as my primary tool to illustrate on the digital canvas known as the internet.
+                        am a polyglot full-stack software engineer with stems from cultures such as Japan, German, and the Philippines. With a passion for creativity, I use code as my primary tool to illustrate on the digital canvas known as the internet.
                         
                     </p>
                     <p class="me me2">
@@ -99,7 +110,6 @@
                     <p class="me me">
                     I work remotely with a few selected freelance clients while maintaining an open mind for new opportunities. 
                     </p>
-
                 </div>
         
                 <div class="img-background">
@@ -109,18 +119,26 @@
                     </div>
                 </div>
             </section>
+            <section class="skills flex">
+                <i class="fa-brands fa-html5 fa-3x" alt="html logo"></i>
+                <i class="fa-brands fa-css3-alt fa-3x" alt="css logo"></i>
+                <i class="fa-brands fa-js fa-3x" alt="javascript logo"></i>
+                <i class="fa-brands fa-react fa-3x" alt="react logo"></i>
+            </section>
             </section>
 
-            <section class="skills flex">
-                
-                <div class="top-icon" >
-                <i class="fa-brands fa-html5 fa-5x">HTML</i>
-                    <img class="css logo" src="./img/css-3.png" alt="css logo">
-                </div>
-                <div class="bottom-icon">
-                    <img class="javascript-logo" src="./img/js.png" alt="javascript logo">
+            <section class="my-process">
+                <h2 class="process">Process</h2>
+                <div class="steps">
+                    <p>1. We will discuess what your or your company need. </p>
+                    <p>2. A proposal and contract will be provided which incorporates ideas withnin our discusson. </p>
+                    <p>3. When the contact comes to an agreement and has been signed, the work begins.</p>
+                    <p>4. I will be informing you thoroughly as I continue to build your own personal website.</p>
+                    <p>5. When everything is done, a finaly meeting will be held to review the product.</p>
+                    <p>6. Once they payment has been settled, your website will be deployed.</p>
                 </div>
             </section>
+
 
 
             <section id="contact-link" class="contact-me">
@@ -137,22 +155,18 @@
             
                         <div class="name-container">
                             <div class="fname-bar contact-form">
-                                <label for="fname"></label>
                                 <input type="text" id="fname" name="firstname" placeholder="Name" required>
                             </div>
                             <div class="lname-bar contact-form">
-                                <label for="lname"></label>
                                 <input type="email" id="email" name="email" placeholder="Email" required>
                             </div>
                             <div class="subject-bar contact-form">
-                                <label for="subject"></label>
                                 <input type="text" id="subject" name="subject" placeholder="Subject">
                             </div>
                         </div>
             
             
                         <div class="message-input contact-form">
-                            <label for="subject"></label>
                             <textarea id="message" name="message" placeholder="Message" required></textarea>
                             <input class="submit-button" type="submit" value="Submit">
                         </div>
@@ -162,7 +176,7 @@
             </div>
             <section>
             </section>
-        </main>
+        </section>
 
 
         <footer class="footer-flex">

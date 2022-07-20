@@ -87,9 +87,7 @@ p{
 
 
 
-.about-me {
-    font-family: var(--font-eno--2--Rampart)
-}
+
 
 .projects-heading{
     font-size: 3.5rem;
@@ -98,6 +96,8 @@ p{
     -webkit-animation: glow-projects 1s ease-in-out infinite alternate;
     -moz-animation: glow-projects 1s ease-in-out infinite alternate;
     animation: glow-projects 1s ease-in-out infinite alternate;
+    font-family: var(--font-main-RO)
+    
 }
 
 .projects-heading-3D{
@@ -106,9 +106,20 @@ p{
     font-size: 3.5rem;
     color: rgba(255, 53, 53, 0.8);
     margin-left: -15.5rem;
-
 }
 
+.about-me {
+    font-family: var(--font-eno--2--Rampart);
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.process {
+    font-family: var(--font-eno--2--Rampart);
+    font-size: 2.2rem;
+    text-align: justify;
+    letter-spacing: 1.8rem;
+}
 
 .contact-title, .contact-title-3D {
     font-size: 3rem;
@@ -210,6 +221,17 @@ p{
     }
 }
 
+/* Glow Skilss */ 
+@-webkit-keyframes glow-skills {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 8px #fff, 0 0 8px #fff, 0 0 25px #4bffc9, 0 0 30px #4bffc9, 0 0 35px #4bffc9, 0 0 40px #4bffc9;
+    }
+}
+
 
 /* Glow Contact */ 
 @-webkit-keyframes glow-contact {
@@ -228,11 +250,12 @@ Basic Style
 
 body{
     background: #1d1d1d;
+    width: 100%;
 }
 
 .main-container {
-    width: 96%;
-    margin: auto;
+    padding: 0.3rem;
+
 }
 
 .career-title {
@@ -246,8 +269,9 @@ body{
 }
 
 .description { 
-    padding: 0 1rem;
+    padding: 0 .5rem;
 }
+
 .button-container {
     margin: 2rem 0;
 }
@@ -281,28 +305,93 @@ body{
 
 
 .contact-me {
-    margin: 1.5rem;
+    margin: 2rem;
 }
 
+
+/* Description */ 
+
+.details { 
+    display: flex;
+}
+
+.about-me{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    color: blue;
+    background-color: red;
+    padding: 0.2rem;
+    border: 2px dotted blue;
+}
 
 /* Skills */
-        /* Top icon */
-.top-icon {
+.skills {
     display: flex;
     justify-content: center;
 }
 
-        /* Bottom icon */ 
 
-.bottom-icon {
+.fa-html5 {
+    color: white;
+    -webkit-animation: glow-skills 1.2s ease-in-out infinite alternate;
+    -moz-animation: glow-skills 1.2s ease-in-out infinite alternate;
+    animation: glow-skills 1.2s ease-in-out infinite alternate;
+    align-self: center;
+    margin: 1rem;
+}
+
+.fa-css3-alt {
+    color: white;
+    -webkit-animation: glow-skills 1.22s ease-in-out infinite alternate;
+    -moz-animation: glow-skills 1.22s ease-in-out infinite alternate;
+    animation: glow-skills 1.22s ease-in-out infinite alternate;
+    margin: 1rem;
+    align-self: center;
+}
+
+.fa-js{
+    color: white;
+    -webkit-animation: glow-skills 1.24s ease-in-out infinite alternate;
+    -moz-animation: glow-skills 1.24s ease-in-out infinite alternate;
+    animation: glow-skills 1.24s ease-in-out infinite alternate;
+    margin: 1rem;
+    margin-left: 1.5rem;
+    align-self: center;
+}
+
+.fa-react{
+    color: white;
+    -webkit-animation: glow-skills 1.26s ease-in-out infinite alternate;
+    -moz-animation: glow-skills 1.26s ease-in-out infinite alternate;
+    animation: glow-skills 1.26s ease-in-out infinite alternate;
+    margin: 1rem;
+    align-self: center;
+}
+
+/* Process */ 
+
+.my-process {
     display: flex;
-    justify-content: center;
+    flex-direction: row-reverse;
+    margin: 1rem;
 }
 
-.bottom-icon img {
-    border-radius: 80px;
+.process {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin: 1.8rem 1rem;
+    padding: 0 0.2rem;
+    padding-top: 1rem;
+    text-align: center;
+    color:#fff200;
+    background-color: rgb(123, 165, 255);
+    border: dotted yellow;
+
 }
 
+.steps{
+    padding: 1rem;
+}
 
 
 
@@ -314,7 +403,7 @@ body{
 }
 .form-container {
     display: flex;
-    width: 270px;
+
     height: 500px;
     justify-content: center;
 }
@@ -323,12 +412,15 @@ input, textarea {
     color: #8d8d8d;
     background: #2b2b2b;
     width: 100%;
-    margin: 0.5rem;
+    margin-bottom: 1rem;
     padding: 10px;
     box-sizing: border-box;
     border: 0;
 }
 
+.contact-form {
+    width: 250px;
+}
 .message-input textarea{
     height: 150px;
 }
@@ -358,8 +450,79 @@ input, textarea {
 }
 
 /* Specific Styling */
-    /* Header */
+    /*Header */
+        /* Burger Menu*/
+.navbar-container {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+    
+.menu-btn{
+    margin-top: -2rem ;
+    margin-right: -0.3rem;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: all .5 ease-in-out;
+    cursor: pointer;
+}
+
+.menu-btn-burger {
+    width: 1.2rem;
+    height: 0.2rem;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px purple;
+    transition: all .5 ease-in-out;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+    content: "";
+    position: absolute;
+    width: 1.2rem;
+    height: 0.2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px purple;
+    transition: all .5 ease-in-out;
+}
+
+.menu-btn-burger::before{
+    transform: translateY(-8px);
+}
+
+.menu-btn-burger::after {
+    transform: translateY(8px);
+}
+
+    /* Menu Animation */ 
+.menu-btn.open .menu-btn-burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-btn.open .menu-btn-burger::before{
+    transform: rotate(45deg) translate(2.1rem, -2.1rem);
+}
+
+.menu-btn.open .menu-btn-burger::after {
+        transform: rotate(-45deg) translate(2.1rem, 2.1rem);
+}
+
+
+
+
+    /* Top */
         /* Button */ 
+
+
 
 .contact-btn {
     display: inline-block;
@@ -402,7 +565,7 @@ body:before {
 
 }
 
-.intro-top:before{
+/* .intro-top:before{
     content: 'え';
     color:white;
     font-size: 1.3rem;
@@ -440,7 +603,7 @@ body:before {
     -webkit-animation: glow-tags-oe 1s ease-in-out infinite alternate;
     -moz-animation: glow-tags-oe 1s ease-in-out infinite alternate;
     animation: glow-tags-oe 1s ease-in-out infinite alternate;
-}
+} */
 
 .eno:before {
     content: '<h1>';
