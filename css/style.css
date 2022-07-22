@@ -164,6 +164,18 @@ p{
     }
 }
 
+/* Menu-btn-glow */
+
+@-webkit-keyframes glow-menu-btn {
+    from {
+        text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 4px #f4fffc, 0 0 6px #f4fffc, 0 0 8px #f4fffc, 0 0 10px #f4fffc, 0 0 12px #f4fffc;
+    }
+
+    to {
+        text-shadow: 0 0 2px #fff, 0 0 4px #f4fffc, 0 0 5px #f4fffc, 0 0 7px #f4fffc, 0 0 9px #f4fffc, 0 0 11px #f4fffc;
+    }
+}
+
 
 /* Glow - Name - Eno */
 @-webkit-keyframes glow-eno {
@@ -221,7 +233,7 @@ p{
     }
 }
 
-/* Glow Skilss */ 
+/* Glow Skills */ 
 @-webkit-keyframes glow-skills {
     from {
         text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
@@ -269,7 +281,7 @@ body{
 }
 
 .description { 
-    padding: 0 .5rem;
+    padding: 0 .5rem;  
 }
 
 .button-container {
@@ -278,6 +290,88 @@ body{
 .contact-btn{
     margin: 0 1rem;
 }
+
+/* Nav */
+
+
+.nav-flex{
+    color: white;
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    
+}
+
+.hidden {
+    visibility: hidden;
+    z-index: 1;
+}
+
+.show {
+    visibility: visible;
+}
+
+
+
+
+
+
+
+.items-container {
+    background: rgba(10, 28, 41, 0.322);
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-items: center;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+}
+
+.items a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.items , .nav-socials {
+    border: solid rgb(13, 12, 13);
+    text-align: center;
+    font-size: 1.5rem;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    font-family: var(--font-main-RO);
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    color: black;
+}
+
+.icon-nav {
+    border: solid red;
+    
+}
+.items:hover, .nav-socials:hover{
+    background-color: white;
+}
+
+.item2, .item4{
+    height: 30rem;
+    background:rgba(255, 53, 53, 0.8)
+}
+
+.item1, .nav-socials{
+    height: 25rem;
+    background: #fff200;
+}
+
+.item3 {
+    height: 35rem;
+    background: #4bffc9;
+}
+
 
         /* Projects */
 
@@ -323,6 +417,7 @@ body{
     padding: 0.2rem;
     border: 2px dotted blue;
 }
+
 
 /* Skills */
 .skills {
@@ -452,15 +547,42 @@ input, textarea {
 /* Specific Styling */
     /*Header */
         /* Burger Menu*/
-.navbar-container {
-    position: fixed;
+.menu-btn {
+    position: relative;
     display: flex;
-    width: 100%;
     justify-content: flex-end;
+    color: rgba(234, 234, 234, 0.384);
+    margin-bottom: -0.5rem;
+    padding-right: 0.3rem;
 }
-    
-.menu-btn{
-    margin-top: -2rem ;
+
+.fa-circle-chevron-down, .fa-arrow-right-from-bracket{
+    position: fixed;
+    color: black;
+    -webkit-animation: glow-menu-btn 1.26s ease-in-out infinite alternate;
+    -moz-animation: glow-menu-btn 1.26s ease-in-out infinite alternate;
+    animation: glow-menu-btn 1.26s ease-in-out infinite alternate;
+}
+
+.fa-arrow-right-from-bracket{
+    position: fixed;
+    color: white;
+    -webkit-animation: glow-menu-btn 1.26s ease-in-out infinite alternate;
+    -moz-animation: glow-menu-btn 1.26s ease-in-out infinite alternate;
+    animation: glow-menu-btn 1.26s ease-in-out infinite alternate;
+}
+
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible{ 
+    visibility: visible;
+}
+
+
+/* .menu-btn{
     margin-right: -0.3rem;
     position: relative;
     display:flex;
@@ -470,6 +592,7 @@ input, textarea {
     height: 2.5rem;
     transition: all .5 ease-in-out;
     cursor: pointer;
+    z-index: 1001;
 }
 
 .menu-btn-burger {
@@ -479,6 +602,16 @@ input, textarea {
     border-radius: 5px;
     box-shadow: 0 2px 5px purple;
     transition: all .5 ease-in-out;
+}
+
+.menu-btn-x {
+    width: 1.2rem;
+    height: 0.2rem;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px purple;
+    transition: all .5 ease-in-out;
+    z-index: 1001;
 }
 
 .menu-btn-burger::before,
@@ -491,29 +624,17 @@ input, textarea {
     border-radius: 5px;
     box-shadow: 0 2px 5px purple;
     transition: all .5 ease-in-out;
+    z-index: 1001;
 }
 
 .menu-btn-burger::before{
     transform: translateY(-8px);
+    z-index: 1001;
 }
 
 .menu-btn-burger::after {
     transform: translateY(8px);
-}
-
-    /* Menu Animation */ 
-.menu-btn.open .menu-btn-burger {
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
-}
-
-.menu-btn.open .menu-btn-burger::before{
-    transform: rotate(45deg) translate(2.1rem, -2.1rem);
-}
-
-.menu-btn.open .menu-btn-burger::after {
-        transform: rotate(-45deg) translate(2.1rem, 2.1rem);
+    z-index: 1001;
 }
 
 
