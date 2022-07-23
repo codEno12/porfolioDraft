@@ -304,16 +304,11 @@ body{
 
 .hidden {
     visibility: hidden;
-    z-index: 1;
 }
 
 .show {
     visibility: visible;
 }
-
-
-
-
 
 
 
@@ -348,10 +343,7 @@ body{
     color: black;
 }
 
-.icon-nav {
-    border: solid red;
-    
-}
+
 .items:hover, .nav-socials:hover{
     background-color: white;
 }
@@ -571,72 +563,22 @@ input, textarea {
     animation: glow-menu-btn 1.26s ease-in-out infinite alternate;
 }
 
+.fa-arrow-right-from-bracket{
+    position: absolute;
+    display:block;
+    margin-bottom: 3rem;
+    padding-left: .3rem;
+    color: black;
+}
+
+.icon-nav-twitter {
+    padding-top: 1.5rem;
+}
+
 
 .hidden {
-    visibility: hidden;
+    display: none
 }
-
-.visible{ 
-    visibility: visible;
-}
-
-
-/* .menu-btn{
-    margin-right: -0.3rem;
-    position: relative;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    transition: all .5 ease-in-out;
-    cursor: pointer;
-    z-index: 1001;
-}
-
-.menu-btn-burger {
-    width: 1.2rem;
-    height: 0.2rem;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px purple;
-    transition: all .5 ease-in-out;
-}
-
-.menu-btn-x {
-    width: 1.2rem;
-    height: 0.2rem;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px purple;
-    transition: all .5 ease-in-out;
-    z-index: 1001;
-}
-
-.menu-btn-burger::before,
-.menu-btn-burger::after {
-    content: "";
-    position: absolute;
-    width: 1.2rem;
-    height: 0.2rem;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px purple;
-    transition: all .5 ease-in-out;
-    z-index: 1001;
-}
-
-.menu-btn-burger::before{
-    transform: translateY(-8px);
-    z-index: 1001;
-}
-
-.menu-btn-burger::after {
-    transform: translateY(8px);
-    z-index: 1001;
-}
-
-
 
 
     /* Top */
