@@ -380,7 +380,9 @@ body{
 .projects-container {
     padding: 1rem 1rem;
     margin-top: 3.5rem;
+    margin-bottom: 2rem;
 }
+
 
 .projects {
     margin-bottom: 1rem;
@@ -680,14 +682,74 @@ body:before {
     color: gray;
 }
 
-.work-container:before{ 
+.work-container:before {
     content: '</h2>';
     font-family: var(--font-tag--1-Caveat);
     font-size: 1rem;
     color: gray;
-
 }
 
+.project-name:before {
+    content: '<p>  ';
+    font-family: var(--font-tag--1-Caveat);
+    font-size: 1rem;
+    color: gray;
+}
+.project-name:after {
+    content: ' <p>';
+    font-family: var(--font-tag--1-Caveat);
+    font-size: 1rem;
+    color: gray;
+}
+
+
+
+
+.me:before {
+    content: '<p>';
+    font-family: var(--font-tag--1-Caveat);
+    font-size: 1rem;
+    color: gray;
+}
+
+.me:after {
+    content: '</p>';
+    font-family: var(--font-tag--1-Caveat);
+    font-size: 1rem;
+    color: gray;
+}
+
+.contact-heading-container{
+    width: 80%;
+}
+.contact-heading-container:before{
+    content: '<h2>';
+    font-family: var(--font-tag--1-Caveat);
+    font-size: 1rem;
+    color: gray;
+}
+
+.contact-title-3D:after {
+    content: '</h2>';
+    font-family: var(--font-tag--1-Caveat);
+    font-size: 1rem;
+    color: gray;
+}
+
+
+.contact-content:before {
+    content: '<p>';
+    font-family: var(--font-tag--1-Caveat);
+    font-size: 1rem;
+    color: gray;
+}
+
+.contact-content:after {
+    content: '</p>';
+    font-family: var(--font-tag--1-Caveat);
+    font-size: 1rem;
+    color: gray;
+}
 /* */ 
 
 .title {
@@ -841,6 +903,15 @@ body:before {
         font-size: 17rem;
     }
 
+    .projects-heading, .projects-heading-3D {
+        font-size: 5rem;
+    }
+    
+    .projects-heading-3D {
+        margin-left: -22rem;
+    
+    }
+
     .contact-btn {
         font-size: 2rem;
         border-radius: 100px;
@@ -862,7 +933,55 @@ body:before {
         display: block;
     }
     
+    .project-name{
+        font-size: 1.5rem;
+    }
+    
+    .about-me {
+        font-size: 3rem;
+    }
 
+    .me {
+        font-size: 1.5rem;
+    }
+
+    
+    .skills .fa-brands{
+        font-size: 5rem;
+        margin-left: 5rem;
+        margin-top: -1rem;
+    }
+
+    .process {
+        font-size: 3rem;
+    }
+    .step{
+        align-self: center;
+        font-size: 1.3rem;
+    }
+
+    .contact-title, .contact-title-3D {
+        font-size: 5rem;
+    }
+    
+    .contact-title-3D {
+        margin-left: -28.8rem;
+    }
+
+
+    .contact-content{
+        font-size: 1.2rem;
+    }
+
+    .icons-container {
+        font-size: 1.5rem;
+    }
+
+    .eno-pic{
+        margin-left: 3rem;
+    }
+
+    
 
 
 
@@ -870,7 +989,8 @@ body:before {
 
 @media(min-width: 1100px){
     .eno{
-        font-size: 5rem;
+        font-size: 5.5rem;
+        margin-bottom: -1rem;
     }
 
     .e{
@@ -880,12 +1000,44 @@ body:before {
         font-size: 20rem;
     }
 
+    .projects-heading, .projects-heading-3D{
+        font-size: 6rem;
+    }
+    .projects-heading-3D{
+        margin-left: -26rem;
+        
+    }
+
+    .project-name{
+        font-size: 1.5rem;
+    }
+
     .me {
         font-size: 1.5rem;
     }
 
-    .step {
-        font-size: 1.2rem;
+
+    .skills .fa-brands {
+        font-size: 6rem;
+        margin-left: 5rem;
+        margin-top: -2rem;
+    }
+    
+    .process {
+        font-size: 3rem;
+    }
+    
+    .steps {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .contact-title, .contact-title-3D{
+        font-size: 6rem;
+    }
+
+    .contact-title-3D{
+        margin-left: -34.5rem;
     }
 
     .contact-content{
@@ -893,6 +1045,35 @@ body:before {
     }
 
     .eno-pic {
-        margin-left: 10rem;
+        margin-left: 8rem;
+    }
+
+    .c-content {
+        width: 65%;
+    }
+
+    .form-container {
+        width: 100;
+    }
+
+    .fname-bar input {
+        width: 350px;
+    }   
+    
+    .lname-bar input {
+            width: 350px;
+    }
+
+    .subject-bar input {
+        width: 350px;
+    }
+
+    .message-input {
+        width: 350px;
+    }
+
+    .icons-container .icon{
+        font-size: 2rem;
+        margin-left: 5rem;
     }
 }
