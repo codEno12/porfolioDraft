@@ -1,11 +1,11 @@
 
-
+// hidden before click 
 const navBar = document.querySelector('.navbar');
-
 const menuBtn = document.querySelector('.fa-circle-chevron-down');
+
+
+// close after click 
 const menuBtnX = document.querySelector('.fa-arrow-right-from-bracket')
-
-
 const menuItem1 = document.querySelector('.items')
 const menuItem2 = document.querySelector('.item2')
 const menuItem3 = document.querySelector('.item3')

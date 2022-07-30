@@ -256,6 +256,17 @@ p{
         }
 }
 
+
+/* Glow - Process Icons */
+@-webkit-keyframes glow-pIcon {
+    from {
+            text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #7758c5, 0 0 8px #7758c5, 0 0 12px #7758c5, 0 0 16px #7758c5, 0 0 20px #7758c5;
+        }
+    
+        to {
+            text-shadow: 0 0 px #fff, 0 0 5px #7758c5, 0 0 10px #7758c5, 0 0 15px #7758c5, 0 0 20px #7758c5, 0 0 25px #7758c5;
+        }
+}
 /* 
 Basic Style
 */
@@ -627,45 +638,6 @@ body:before {
 
 }
 
-/* .intro-top:before{
-    content: 'え';
-    color:white;
-    font-size: 1.3rem;
-    font-family: var(--font-eno--3-Train);
-    -webkit-animation: glow-tag-eo 1s ease-in-out infinite alternate;
-    -moz-animation: glow-tag-eo 1s ease-in-out infinite alternate;
-    animation: glow-tag-eo 1s ease-in-out infinite alternate;
-}
-
-.main-title:before {
-    content: 'の';
-    font-size: 1.3rem;
-    font-family: var(--font-eno--3-Train);
-    -webkit-animation: glow-tag-eo 1s ease-in-out infinite alternate;
-    -moz-animation: glow-tag-eo 1s ease-in-out infinite alternate;
-    animation: glow-tag-eo 1s ease-in-out infinite alternate;
-}
-
-.intro-top::after {
-    content: 'の';
-    color: white;
-    font-size: 1.3rem;
-    font-family: var(--font-eno--3-Train);
-    -webkit-animation: glow-tags-oe 1s ease-in-out infinite alternate;
-    -moz-animation: glow-tags-oe 1s ease-in-out infinite alternate;
-    animation: glow-tags-oe 1s ease-in-out infinite alternate;
-}
-
-
-.main-title::after {
-    content: 'え';
-    color: white;
-    font-size: 1.3rem;
-    font-family: var(--font-eno--3-Train);
-    -webkit-animation: glow-tags-oe 1s ease-in-out infinite alternate;
-    -moz-animation: glow-tags-oe 1s ease-in-out infinite alternate;
-    animation: glow-tags-oe 1s ease-in-out infinite alternate;
-} */
 
 .eno:before {
     content: '<h1>';
@@ -726,95 +698,201 @@ body:before {
 }
 
 
+/*  Hidden Items */ 
+
+.smallscreen-hide { 
+    display: none;
+}
 /* Form Tags */ 
 
 
-/* Neon Button */
-/* 
-.neon-button { 
-    font-family: var(--font-button-Press);
-    position: relative;
-    display: inline-block;
-    padding: 15px 30px;
-    color: #2196f3;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-decoration: none;
-    font-size: 1rem;
-    overflow: hidden;
-    transition: 0.5s;
+
+
+/* Media Queries */ 
+
+@media (min-width: 600px ){
+    .midscreen-hide {
+        display: none;
+    }
+    .intro-mid-flex {
+        display:flex;
+    }
+    .intro-bottom {
+        display: flex;
+        
+    }
+    .name-jp{
+        font-size: 15rem;
+    }
+    .eno{
+        font-size: 4rem;
+    }
+    .intro-btn-container { 
+        display: block;
+        align-self: center;
+        text-align: center;
+    }
+
+    .contact-btn {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 3rem;
+        font-size: 3rem;
+        margin-left: 5rem;
+    }
+
+
+    .me1, .me2 {
+        margin-bottom: 2rem;
+    }
+    
+    .skills {
+        margin-top: -7rem;
+    }
+
+    .smallscreen-hide {
+        display: inline-block;
+    }
+
+
+    .midscreen-flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pI {
+        margin: 2rem 2rem;
+        padding-top: -3rem;
+        color: white;
+        -webkit-animation: glow-pIcon 1s ease-in-out infinite alternate;
+        -moz-animation: glow-pIcon 1s ease-in-out infinite alternate;
+        animation: glow-pIcon 1s ease-in-out infinite alternate;
+    }
+    .steps {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .midscreen-contact {
+        display: flex; 
+        flex-wrap: nowrap;
+    }
+    .contact-content {
+        line-height: 2rem;
+    }
+
+    .form-container{
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+
+    
+    .connect-icon{
+        color: white;
+        margin-left: 4.5rem;
+        margin-top: 1.5rem;
+        -webkit-animation: glow-pIcon 1s ease-in-out infinite alternate;
+        -moz-animation: glow-pIcon 1s ease-in-out infinite alternate;
+        animation: glow-pIcon 1s ease-in-out infinite alternate;
+
+        z-index: 100000;
+    }
+
+    .eno-pic{
+        width: 200px;
+        border-radius: 150px;
+        -moz-box-shadow: 0 0 10px #fff;
+        -webkit-box-shadow: 0 0 5px #fff;
+        box-shadow: 0px 0px 5px #fff;
+        display: inline-block;
+        margin-left: -3rem;
+        
+        
+    }
 }
 
-.neon-button:hover{
-    color: #255784; 
-    background: #2196f3;
-    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-    transition-delay: 1s;
-}
+@media (min-width: 700px){
+    .eno-pic {
+        width: 230px;
+        margin-left: 0.1rem;
+    }
 
-.neon-button span {
-    position: absolute;
-    display: block;
 }
 
 
-.neon-button span:nth-child(1){
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #2196f3);
+@media(min-width: 900px){
+    body{
+        padding: 1.5rem;
+    }
+    .bigscreen-flex {
+        display:flex;
+        flex-direction: row-reverse;
+    }
+    .eno {
+        font-size: 4rem;
+    }
+    .name-jp{
+        font-size: 17rem;
+    }
+
+    .contact-btn {
+        font-size: 2rem;
+        border-radius: 100px;
+        border: none;
+        box-shadow: 1px 1px 20px #ffffff;
+        height: 150px;
+        width: 150px;
+    
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .intro-btn-container {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .intro-bottom{
+        display: block;
+    }
+    
+
+
+
+
 }
 
-.neon-button:hover span:nth-child(1){
-    left: 100%;
-    transition: 1s;
+@media(min-width: 1100px){
+    .eno{
+        font-size: 5rem;
+    }
+
+    .e{
+        font-size: 20rem;
+    }
+    .name-jp{
+        font-size: 20rem;
+    }
+
+    .me {
+        font-size: 1.5rem;
+    }
+
+    .step {
+        font-size: 1.2rem;
+    }
+
+    .contact-content{
+        font-size: 1.3rem;
+    }
+
+    .eno-pic {
+        margin-left: 10rem;
+    }
 }
-
-
-.neon-button span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #2196f3);
-}
-
-.neon-button:hover span:nth-child(3) {
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
-}
-
-
-
-.neon-button span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #2196f3);
-}
-
-.neon-button:hover span:nth-child(2) {
-    top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-}
-
-
-
-
-.neon-button span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #2196f3);
-}
-
-.neon-button:hover span:nth-child(4) {
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.75s;
-} */
